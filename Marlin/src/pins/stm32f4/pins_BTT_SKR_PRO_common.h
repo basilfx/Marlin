@@ -38,7 +38,7 @@
 // Use one of these or SDCard-based Emulation will be used
 #if NO_EEPROM_SELECTED
   //#define SRAM_EEPROM_EMULATION                 // Use BackSRAM-based EEPROM emulation
-  #define FLASH_EEPROM_EMULATION                  // Use Flash-based EEPROM emulation
+  //#define FLASH_EEPROM_EMULATION                // Use Flash-based EEPROM emulation
 #endif
 
 #if ENABLED(FLASH_EEPROM_EMULATION)
@@ -234,7 +234,8 @@
 //
 #define TEMP_0_PIN                          PF4   // T1 <-> E0
 #define TEMP_1_PIN                          PF5   // T2 <-> E1
-#define TEMP_2_PIN                          PF6   // T3 <-> E2
+//#define TEMP_2_PIN                        PF6   // T3 <-> E2
+#define TEMP_CHAMBER_PIN                    PF6   // T3 <-> E2
 #define TEMP_BED_PIN                        PF3   // T0 <-> Bed
 
 //
@@ -242,11 +243,12 @@
 //
 #define HEATER_0_PIN                        PB1   // Heater0
 #define HEATER_1_PIN                        PD14  // Heater1
-#define HEATER_2_PIN                        PB0   // Heater1
+//#define HEATER_2_PIN                      PB0   // Heater1
 #define HEATER_BED_PIN                      PD12  // Hotbed
 #define FAN_PIN                             PC8   // Fan0
 #define FAN1_PIN                            PE5   // Fan1
 #define FAN2_PIN                            PE6   // Fan2
+#define FAN3_PIN                            PB0   // Fan3
 
 #ifndef E0_AUTO_FAN_PIN
   #define E0_AUTO_FAN_PIN               FAN1_PIN
