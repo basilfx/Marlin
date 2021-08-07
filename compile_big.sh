@@ -1,0 +1,3 @@
+#!/bin/sh
+
+PLATFORMIO_BUILD_FLAGS="-DPRINTER_AM8_BIG" platformio run -e BIGTREE_SKR_PRO
